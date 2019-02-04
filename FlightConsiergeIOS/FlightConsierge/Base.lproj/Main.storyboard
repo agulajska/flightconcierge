@@ -215,7 +215,7 @@
         <!--recomend Pasta-->
         <scene sceneID="m9k-yg-Kvp">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="uwF-Ni-SML" userLabel="recomend Pasta" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="uwF-Ni-SML" userLabel="recomend Pasta" customClass="PopupVC" customModule="FlightConsierge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="center" id="XU4-L7-PGy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,14 +232,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-nK-Jip">
-                                        <rect key="frame" x="105" y="78" width="30" height="30"/>
+                                        <rect key="frame" x="95" y="72" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.27007985410000002" blue="0.25533909989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="OK">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="cRd-PT-03w" kind="show" id="H3Z-tH-PgQ"/>
+                                            <action selector="closePopup:" destination="uwF-Ni-SML" eventType="touchUpInside" id="KZk-J5-WoE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -257,7 +257,7 @@
         <!--recomend Chicken-->
         <scene sceneID="qsW-o8-Mx3">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="cdE-Nf-HXo" userLabel="recomend Chicken" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="cdE-Nf-HXo" userLabel="recomend Chicken" customClass="PopupVC" customModule="FlightConsierge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="center" id="KBA-1m-qIx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,7 +281,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="cRd-PT-03w" kind="show" id="Qie-ER-hhE"/>
+                                            <action selector="closePopup:" destination="cdE-Nf-HXo" eventType="touchUpInside" id="ymQ-AR-GS8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -484,9 +484,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gy7-kl-HSJ"/>
         <segue reference="zaw-Tt-g0f"/>
-        <segue reference="IFQ-vB-Hes"/>
         <segue reference="RhN-aA-qdD"/>
     </inferredMetricsTieBreakers>
 </document>
